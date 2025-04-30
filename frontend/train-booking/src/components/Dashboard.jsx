@@ -74,7 +74,7 @@ const Dashboard = () => {
       if (!token) throw new Error('Please login first');
 
       const response = await axios.post(
-        'http://localhost:5000/api/booking/cancel',
+        'https://train-seat-booking-app-9n8b.onrender.com/api/booking/cancel',
         { bookingId },
         { headers: { Authorization: `Bearer ${token}` } }
       );
