@@ -19,7 +19,7 @@ const Dashboard = () => {
       const token = localStorage.getItem('token');
       if (!token) throw new Error('Please login first');
 
-      const response = await axios.get('http://localhost:5000/api/booking/train', {
+      const response = await axios.get('https://train-seat-booking-app-9n8b.onrender.com/api/booking/train', {
         headers: { Authorization: `Bearer ${token}` }
       });
 
